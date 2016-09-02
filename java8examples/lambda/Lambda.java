@@ -1,4 +1,4 @@
-package java8examples;
+package java8examples.lambda;
 
 import java.util.ArrayList;
 import java.util.Comparator;
