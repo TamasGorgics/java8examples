@@ -6,7 +6,7 @@ package java8examples.methodreferences;
 
 import java.util.function.Supplier;
 
-public class MethodReference2 {
+public class MethodReferences2 {
 
 	public static void main(String... args) {
 		
@@ -16,7 +16,7 @@ public class MethodReference2 {
 		
 		// With anonymous class
 		
-		printFirst(new Supplier<Integer>() {
+		print(new Supplier<Integer>() {
 			@Override
 			public Integer get() {
 				return s.length();
@@ -25,14 +25,14 @@ public class MethodReference2 {
 		
 		// Equivalent with lambda expression
 		
-		printFirst(() ->  s.length());
+		print(() ->  s.length());
 		
 		// Equivalent with method reference
 		
-		printFirst(s::length);
+		print(s::length);
 	}
 	
-	public static void printFirst(Supplier<Integer> supplier) {
+	public static void print(Supplier<Integer> supplier) {
 		System.out.println(supplier.get());
 	}
 }
