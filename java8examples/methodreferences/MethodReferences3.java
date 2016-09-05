@@ -6,8 +6,6 @@ package java8examples.methodreferences;
 
 import java.util.function.Function;
 
-import javax.print.DocFlavor.STRING;
-
 public class MethodReferences3 {
 
 	public static void main(String... args) {
