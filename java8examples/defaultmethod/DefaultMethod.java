@@ -1,12 +1,7 @@
 package java8examples.defaultmethod;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 /**
  * @author Tamás Görgics
- *
  */
 public class DefaultMethod {
 
@@ -18,8 +13,7 @@ public class DefaultMethod {
 		a.myAbstractMethod();
 		b.myAbstractMethod();
 		
-		// These two should print the same sentence
-		
+		// These two below should print the same sentence	
 		a.myDefaultMethod();
 		b.myDefaultMethod();
 	}
@@ -27,6 +21,7 @@ public class DefaultMethod {
 
 interface MyInterface {
 
+	// Notice 'default' keyword
 	default void myDefaultMethod() {
 		System.out.println("Default method invoked from parent class.");
 	}
