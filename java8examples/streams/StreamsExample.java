@@ -41,7 +41,8 @@ public class StreamsExample {
 		
 		// Reduce example: returns the content of the list in an optional string
 		
-		Optional<String> reducedString = strings.stream().filter(s -> !s.isEmpty()).sorted().reduce((s1, s2) -> s1 + "." + s2);
+		Optional<String> reducedString = strings.stream().filter(s -> !s.isEmpty())
+				.sorted().reduce((s1, s2) -> s1 + "." + s2);
 		reducedString.ifPresent(System.out::println);
 	}
 }
