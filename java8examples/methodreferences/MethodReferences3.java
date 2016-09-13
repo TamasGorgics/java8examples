@@ -6,12 +6,13 @@ package java8examples.methodreferences;
 
 import java.util.function.Function;
 
+/**
+ * Unbound non-static method reference
+ */
 public class MethodReferences3 {
 
 	public static void main(String... args) {
-		
-		// Unbound non-static method reference
-		
+				
 		String string = "THIS IS A STRING WITH CAPITAL LETTERS.";
 		
 		// With anonymous inner class

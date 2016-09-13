@@ -3,12 +3,13 @@ package java8examples.methodreferences;
 import java.util.Arrays;
 import java.util.function.Consumer;
 
+/**
+ * Static method reference
+ */
 public class MethodReferences1 {
 
 	public static void main(String... args) {
-		
-		// Static method reference: className::staticMethodName
-		
+				
 		int[] numbers = {3, 7, 1, 4, 9};
 		
 		// Using a functional interface - Consumer

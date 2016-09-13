@@ -6,12 +6,13 @@ package java8examples.methodreferences;
 
 import java.util.function.Supplier;
 
+/**
+ * Bound non-static method reference
+ */
 public class MethodReferences2 {
 
 	public static void main(String... args) {
-		
-		// Bound non-static method reference
-		
+				
 		String s = "This is a sentence in a string.";
 		
 		// With anonymous class
